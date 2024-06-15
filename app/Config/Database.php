@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'smkn1445_admin',
-        'password' => 'SMKN2KupangAdmin',
-        'database' => 'smkn1445_web',
+        'username' => 'root',
+        'password' => '',
+        'database' => '',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
