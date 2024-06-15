@@ -1,0 +1,64 @@
+CRITICAL - 2023-05-25 12:32:43 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/Announcement.php on line 98.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Announcement->view()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 12:33:06 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/Announcement.php on line 99.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Announcement->view()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 12:36:29 --> Cannot use object of type stdClass as array
+in APPPATH/Views/layouts/announcement-detail.php on line 7.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Announcement.php(122): view()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Announcement->view()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-25 13:39:17 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/layouts/gallery-detail.php on line 33.
+ 1 APPPATH/Views/layouts/gallery-detail.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layouts/gallery-detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Gallery.php(106): view()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Gallery->view()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-25 15:50:02 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/twelveio/projects/homepage/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/twelveio/projects/homepage/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /home/twelveio/projects/homepage/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /home/twelveio/projects/homepage/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/twelveio/projects/homepage/app/Controllers/Home.php(37): CodeIgniter\Database\BaseConnection->query()
+#4 /home/twelveio/projects/homepage/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#5 /home/twelveio/projects/homepage/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#6 /home/twelveio/projects/homepage/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/twelveio/projects/homepage/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/twelveio/projects/homepage/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/twelveio/projects/homepage/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /home/twelveio/projects/homepage/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/twelveio/projects/homepage/app/Controllers/Home.php(37): CodeIgniter\Database\BaseConnection->query()
+#3 /home/twelveio/projects/homepage/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#4 /home/twelveio/projects/homepage/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#5 /home/twelveio/projects/homepage/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/twelveio/projects/homepage/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-05-25 15:50:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Home.php(37): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
